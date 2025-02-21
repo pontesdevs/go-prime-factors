@@ -1,8 +1,9 @@
 package go_prime_factors
 
 func PrimeFactors(n int) []int {
+	result := []int{}
 	if n == 2 {
-		return []int{2}
+		result = append(result, 2)
 	}
-	return []int{}
+	return result
 }
