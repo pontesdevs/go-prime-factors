@@ -61,3 +61,11 @@ func TestPrimeFactorsOf9Is3_3(t *testing.T) {
 		t.Errorf("PrimeFactors should be %v but we got %v", want, got)
 	}
 }
+
+func TestPrimeFactorsAcceptance(t *testing.T) {
+	want := []int{2, 2, 3, 3, 3, 5, 7, 11, 13, 23}
+	got := PrimeFactors(2 * 2 * 3 * 3 * 3 * 5 * 7 * 11 * 13 * 23)
+	if !reflect.DeepEqual(got, want) {
+		t.Errorf("PrimeFactors should be %v but we got %v", want, got)
+	}
+}
