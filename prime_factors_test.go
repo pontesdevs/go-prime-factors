@@ -29,3 +29,11 @@ func TestPrimeFactorsOf3Is3(t *testing.T) {
 		t.Errorf("PrimeFactorsOf1 should be %v but we got %v", want, got)
 	}
 }
+
+func TestPrimeFactorsOf4Is2_2(t *testing.T) {
+	want := []int{2, 2}
+	got := PrimeFactors(4)
+	if !reflect.DeepEqual(got, want) {
+		t.Errorf("PrimeFactorsOf1 should be %v but we got %v", want, got)
+	}
+}
