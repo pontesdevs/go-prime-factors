@@ -7,6 +7,10 @@ func PrimeFactors(n int) []int {
 			result = append(result, 2)
 			n /= 2
 		}
+		for n%3 == 0 {
+			result = append(result, 3)
+			n /= 3
+		}
 	}
 	if n > 1 {
 		result = append(result, n)
